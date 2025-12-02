@@ -1,6 +1,6 @@
 # Portfolio (React + Vite)
 
-Ready for GitHub Pages. The router now uses hashes and Vite builds to `docs/` with relative asset paths.
+Ready for GitHub Pages via `gh-pages` branch. Router uses hashes; assets are relative to `/Portfolio/`.
 
 ## Dev
 ```bash
@@ -8,14 +8,12 @@ npm install
 npm run dev
 ```
 
-## Build for GitHub Pages
+## Build / Deploy to GitHub Pages
 ```bash
-npm run build   # outputs to docs/ (includes .nojekyll)
-git add docs/
-git commit -m "Build for Pages"
-git push
+npm run build   # outputs to dist/
+npm run deploy  # pushes dist/ to gh-pages branch via gh-pages
 ```
-Then in GitHub repo settings, set Pages → Source to `Deploy from branch` and choose `main` (or your default branch) with `/docs` folder.
+Then in GitHub repo settings, set Pages → Source to `Deploy from a branch`, Branch `gh-pages`, Folder `/` (root).
 
 ## Preview local build
 ```bash
