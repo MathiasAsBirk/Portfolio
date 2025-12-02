@@ -1,0 +1,10 @@
+.h{ text-align:center; margin-bottom:14px }
+.grid{
+  list-style:none; padding:0; margin:0;
+  display:grid; grid-template-columns:repeat(auto-fit, minmax(140px, 1fr));
+  gap:12px;
+}
+.item{ border:1px solid var(--border); border-radius:12px; padding:14px; text-align:center; background:rgba(255,255,255,.02) }
+.icn{ font-size:26px; display:block; margin:0 auto 6px; color:var(--text) }
+.lbl{ color:var(--muted) }
+.item:hover .icn{ color:var(--brand) }

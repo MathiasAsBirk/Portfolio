@@ -1,0 +1,6 @@
+.form{ display:grid; gap:10px; max-width:560px; }
+input, textarea{
+  background:#0b1220; color:var(--text); border:1px solid var(--border);
+  border-radius:10px; padding:12px; outline:none;
+}
+input:focus, textarea:focus{ border-color:var(--brand) }

@@ -1,0 +1,7 @@
+.nav{ position:sticky; top:0; z-index:20; backdrop-filter: blur(6px) }
+.row{ display:flex; justify-content:space-between; align-items:center; height:64px }
+.logo{ font-weight:800; letter-spacing:.3px }
+.logo span{ color:var(--brand) }
+.links{ display:flex; gap:22px; list-style:none; padding:0; margin:0 }
+.links a{ color:var(--muted); font-weight:600 }
+.links a.active, .links a:hover{ color:var(--text) }
