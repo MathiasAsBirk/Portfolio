@@ -10,12 +10,12 @@ npm run dev
 
 ## Build for GitHub Pages
 ```bash
-npm run build   # outputs to docs/
+npm run build   # outputs to docs/ (includes .nojekyll)
 git add docs/
 git commit -m "Build for Pages"
 git push
 ```
-Then in GitHub repo settings, set Pages → Source to `Deploy from branch` and choose `main` (or default branch) with `/docs` folder.
+Then in GitHub repo settings, set Pages → Source to `Deploy from branch` and choose `main` (or your default branch) with `/docs` folder.
 
 ## Preview local build
 ```bash
