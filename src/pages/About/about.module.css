@@ -1,0 +1,55 @@
+.page {
+  min-height: calc(100vh - 72px);
+}
+
+.inner {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 80px 24px 120px;
+}
+
+.header {
+  margin-bottom: 64px;
+}
+
+.header h1 {
+  font-size: 2.5rem;
+  margin-bottom: 12px;
+}
+
+.header p {
+  max-width: 520px;
+  color: var(--text-muted);
+  line-height: 1.6;
+}
+
+.content {
+  display: grid;
+  grid-template-columns: 320px 1fr;
+  gap: 64px;
+  align-items: start;
+}
+
+.imageWrap {
+  border-radius: var(--radius-lg);
+  overflow: hidden;
+  border: 1px solid var(--border);
+  background: var(--bg-card);
+  min-height: 280px;
+}
+
+.imageWrap img {
+  width: 100%;
+  display: block;
+  filter: grayscale(100%);
+}
+
+.text p {
+  max-width: 620px;
+  color: var(--text-muted);
+  line-height: 1.7;
+}
+
+.text p + p {
+  margin-top: 16px;
+}
