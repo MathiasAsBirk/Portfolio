@@ -8,54 +8,55 @@ function About() {
         <header className={styles.header}>
           <h1>About Me</h1>
           <p>
-            Frontend-focused web developer with a strong foundation in modern
-            JavaScript and React.
+            Practical and product-oriented Web Developer. I build clean, 
+            structured interfaces that are easy to maintain and scale.
           </p>
         </header>
 
         <div className={styles.content}>
           {/* Left Column: Image */}
           <div className={styles.imageWrap}>
-            <img src={profileImg} alt="Mathias" />
+            <img src={profileImg} alt="Mathias Askham Birkeland" />
           </div>
 
           {/* Right Column: Bio & Info */}
           <div className={styles.textColumn}>
             <div className={styles.bio}>
               <p className={styles.lead}>
-                I’m a newly graduated web developer with a strong focus on
-                frontend development using React.
+                I am a newly graduated Web Developer with a strong foundation in modern 
+                frontend development, specifically React, JavaScript, and CSS Modules.
               </p>
               
               <p>
-                My approach is practical and product-oriented. I care about
-                performance, accessibility, and developer experience. I
-                prefer simple solutions that hold up over time rather than
-                clever tricks that are hard to maintain.
+                My approach to development is straightforward: I favor stable, well-thought-out 
+                solutions over clever tricks. I enjoy working independently and taking ownership 
+                of my tasks, but I also value effective teamwork when building larger systems.
               </p>
 
               <p>
-                I’m comfortable working across the stack when needed, but my
-                main strength is turning designs and requirements into solid,
-                user-friendly applications.
+                With experience from both retail and office environments, I have learned to 
+                keep a cool head under pressure and maintain structure in my daily workflows. 
+                I am now looking for an opportunity to contribute my skills to a professional development team.
               </p>
             </div>
 
             <div className={styles.infoGrid}>
               <div className={styles.infoBox}>
                 <h3>Education</h3>
-                <p>Web Development Graduate</p>
-                <span>2023 - 2025</span>
+                <p>Web Developer</p>
+                <span>Media College Denmark (2025)</span>
               </div>
               
               <div className={styles.infoBox}>
-                <h3>Focus</h3>
-                <p>React Ecosystem & UI/UX</p>
+                <h3>Core Focus</h3>
+                <p>React & Clean Code</p>
+                <span>Frontend / UI / UX</span>
               </div>
 
               <div className={styles.infoBox}>
                 <h3>Location</h3>
-                <p>Denmark</p>
+                <p>Viborg, Denmark</p>
+                <span>Open to relocation</span>
               </div>
             </div>
           </div>
