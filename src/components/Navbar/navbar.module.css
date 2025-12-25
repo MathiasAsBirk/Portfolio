@@ -2,8 +2,8 @@
   position: sticky;
   top: 0;
   z-index: 100;
-  background: rgba(11, 18, 32, 0.8);
-  backdrop-filter: blur(8px);
+  background: rgba(11, 18, 32, 0.85); /* Slightly darker for better contrast */
+  backdrop-filter: blur(12px);
   border-bottom: 1px solid var(--border);
 }
 
@@ -11,32 +11,37 @@
   max-width: 1200px;
   margin: 0 auto;
   padding: 16px 24px;
-
   display: flex;
   justify-content: space-between;
   align-items: center;
 }
 
 .logo {
-  font-weight: 600;
-  letter-spacing: 0.4px;
+  font-weight: 700;
+  font-size: 1.1rem;
+  letter-spacing: 0.5px;
+  color: var(--text-main);
 }
 
 .nav {
   display: flex;
-  gap: 28px;
+  gap: 32px;
 }
 
-.nav a {
+/* Base style for links */
+.link {
   font-size: 0.95rem;
   color: var(--text-muted);
+  text-decoration: none;
   transition: color 0.2s ease;
+  font-weight: 500;
 }
 
-.nav a:hover {
+.link:hover {
   color: var(--text-main);
 }
 
-.nav a.active {
+/* The active state class */
+.active {
   color: var(--accent);
 }

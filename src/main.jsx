@@ -8,7 +8,8 @@ import "./styles/globals.css";
 
 ReactDOM.createRoot(document.getElementById("root")).render(
   <React.StrictMode>
-    <BrowserRouter>
+    {/* matches your repository name exactly */}
+    <BrowserRouter basename="/Portfolio">
       <App />
     </BrowserRouter>
   </React.StrictMode>

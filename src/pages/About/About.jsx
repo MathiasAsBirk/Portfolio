@@ -1,11 +1,11 @@
-import styles from "./About.module.css";
+import styles from "./about.module.css";
 
 function About() {
   return (
     <section className={styles.page}>
       <div className={styles.inner}>
         <header className={styles.header}>
-          <h1>About me</h1>
+          <h1>About Me</h1>
           <p>
             Frontend-focused web developer with a strong foundation in modern
             JavaScript and React.
@@ -13,28 +13,50 @@ function About() {
         </header>
 
         <div className={styles.content}>
+          {/* Left Column: Image */}
           <div className={styles.imageWrap}>
             <img src="/profile.png" alt="Mathias" />
           </div>
 
-          <div className={styles.text}>
-            <p>
-              I’m a newly graduated web developer with a strong focus on
-              frontend development using React. I enjoy building clean,
-              structured interfaces that are easy to maintain and scale.
-            </p>
+          {/* Right Column: Bio & Info */}
+          <div className={styles.textColumn}>
+            <div className={styles.bio}>
+              <p className={styles.lead}>
+                I’m a newly graduated web developer with a strong focus on
+                frontend development using React.
+              </p>
+              
+              <p>
+                My approach is practical and product-oriented. I care about
+                performance, accessibility, and developer experience. I
+                prefer simple solutions that hold up over time rather than
+                clever tricks that are hard to maintain.
+              </p>
 
-            <p>
-              My approach is practical and product-oriented. I care about
-              performance, accessibility and developer experience, and I
-              prefer simple solutions that hold up over time.
-            </p>
+              <p>
+                I’m comfortable working across the stack when needed, but my
+                main strength is turning designs and requirements into solid,
+                user-friendly applications.
+              </p>
+            </div>
 
-            <p>
-              I’m comfortable working across the stack when needed, but my
-              main strength is turning designs and requirements into solid,
-              user-friendly applications.
-            </p>
+            <div className={styles.infoGrid}>
+              <div className={styles.infoBox}>
+                <h3>Education</h3>
+                <p>Web Development Graduate</p>
+                <span>2023 - 2025</span>
+              </div>
+              
+              <div className={styles.infoBox}>
+                <h3>Focus</h3>
+                <p>React Ecosystem & UI/UX</p>
+              </div>
+
+              <div className={styles.infoBox}>
+                <h3>Location</h3>
+                <p>Denmark</p>
+              </div>
+            </div>
           </div>
         </div>
       </div>

@@ -1,5 +1,7 @@
 .page {
+  margin-top: -50px;
   min-height: calc(100vh - 72px);
+  background-color: var(--bg-main);
 }
 
 .inner {
@@ -8,48 +10,124 @@
   padding: 80px 24px 120px;
 }
 
+/* Header matches Portfolio style */
 .header {
   margin-bottom: 64px;
+  border-bottom: 1px solid var(--border);
+  padding-bottom: 40px;
 }
 
 .header h1 {
-  font-size: 2.5rem;
-  margin-bottom: 12px;
+  font-size: 3rem;
+  margin-bottom: 16px;
+  color: var(--text-main);
 }
 
 .header p {
-  max-width: 520px;
+  max-width: 600px;
   color: var(--text-muted);
-  line-height: 1.6;
+  line-height: 1.7;
+  font-size: 1.1rem;
 }
 
+/* Main Grid Layout */
 .content {
   display: grid;
-  grid-template-columns: 320px 1fr;
-  gap: 64px;
+  grid-template-columns: 350px 1fr; /* Fixed image width, flexible text */
+  gap: 80px;
   align-items: start;
 }
 
+/* Image Styling */
 .imageWrap {
   border-radius: var(--radius-lg);
   overflow: hidden;
   border: 1px solid var(--border);
   background: var(--bg-card);
-  min-height: 280px;
+  position: sticky;
+  top: 100px; /* Keeps image visible while scrolling text */
 }
 
 .imageWrap img {
   width: 100%;
+  height: auto;
   display: block;
-  filter: grayscale(100%);
+  /* Removed grayscale so it looks more alive */
+  transition: transform 0.3s ease;
 }
 
-.text p {
-  max-width: 620px;
+.imageWrap:hover img {
+  transform: scale(1.03);
+}
+
+/* Text Column Styling */
+.textColumn {
+  display: flex;
+  flex-direction: column;
+  gap: 48px;
+}
+
+.bio p {
   color: var(--text-muted);
-  line-height: 1.7;
+  line-height: 1.8;
+  font-size: 1.05rem;
+  max-width: 650px;
 }
 
-.text p + p {
-  margin-top: 16px;
+.bio p + p {
+  margin-top: 24px;
+}
+
+/* Make the first paragraph pop */
+.lead {
+  color: var(--text-main) !important;
+  font-size: 1.25rem !important;
+  font-weight: 500;
+}
+
+/* Info Grid (Education, etc) */
+.infoGrid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: 24px;
+  padding-top: 32px;
+  border-top: 1px solid var(--border);
+}
+
+.infoBox h3 {
+  font-size: 0.9rem;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  color: var(--accent);
+  margin-bottom: 8px;
+}
+
+.infoBox p {
+  font-size: 1.1rem;
+  font-weight: 600;
+  color: var(--text-main);
+  margin: 0;
+}
+
+.infoBox span {
+  font-size: 0.9rem;
+  color: var(--text-muted);
+}
+
+/* Responsive */
+@media (max-width: 900px) {
+  .content {
+    grid-template-columns: 1fr; /* Stack on tablet */
+    gap: 48px;
+  }
+
+  .imageWrap {
+    max-width: 400px;
+    margin: 0 auto;
+    position: static;
+  }
+  
+  .textColumn {
+    text-align: left;
+  }
 }
