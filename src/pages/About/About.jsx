@@ -1,4 +1,5 @@
 import styles from "./about.module.css";
+import profileImg from "../../assets/profile.png";
 
 function About() {
   return (
@@ -15,7 +16,7 @@ function About() {
         <div className={styles.content}>
           {/* Left Column: Image */}
           <div className={styles.imageWrap}>
-            <img src="/profile.png" alt="Mathias" />
+            <img src={profileImg} alt="Mathias" />
           </div>
 
           {/* Right Column: Bio & Info */}

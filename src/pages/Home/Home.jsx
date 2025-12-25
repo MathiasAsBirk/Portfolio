@@ -1,4 +1,5 @@
 import styles from "./home.module.css";
+import profileImg from "../../assets/profile.png";
 
 function Home() {
   return (
@@ -42,7 +43,7 @@ function Home() {
               </p>
             </div>
             <div className={styles.imageWrap}>
-              <img src="/profile.png" alt="Mathias" />
+              <img src={profileImg} alt="Mathias" />
             </div>
           </div>
         </div>
