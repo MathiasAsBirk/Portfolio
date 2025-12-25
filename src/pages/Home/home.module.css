@@ -217,8 +217,11 @@
 }
 
 .cardImage {
-  height: 200px;
-  background: linear-gradient(135deg, #1e2a45, #111a2e);
+  width: 100%;
+  height: 220px;       
+  object-fit: cover;   
+  object-position: top;
+  display: block;
   border-bottom: 1px solid var(--border);
 }
 

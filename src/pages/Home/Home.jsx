@@ -1,6 +1,9 @@
 import styles from "./home.module.css";
 import profileImg from "../../assets/profile.png";
 
+import f1Img from "../../assets/f1-preview.png";
+import travelImg from "../../assets/travel-preview.png";
+
 function Home() {
   return (
     <div className={styles.container}>
@@ -49,7 +52,7 @@ function Home() {
         </div>
       </section>
 
-      {/* TECH STACK - Matches your CV Skills */}
+      {/* TECH STACK */}
       <section className={styles.tech}>
         <div className={styles.sectionInner}>
           <h3 className={styles.sectionTitle}>Tech Stack</h3>
@@ -70,53 +73,57 @@ function Home() {
           <h3 className={styles.sectionTitle}>Featured Projects</h3>
           
           <div className={styles.projectGrid}>
-            {/* Project 1 - Your F1 App */}
+            
+            {/* PROJECT 1: F1 App */}
             <article className={styles.projectCard}>
-              <div className={styles.cardImage}></div>
+              {/* Image replaces the empty div */}
+              <img src={f1Img} alt="F1 App Preview" className={styles.cardImage} />
+              
               <div className={styles.cardContent}>
                 <h4>F1 Stats & Fan App</h4>
                 <p>
-                  A comprehensive React application featuring live data integration, 
-                  routing, and custom mini-features. Built to demonstrate complex state management.
+                  My flagship project. A full-stack React application with live data, 
+                  routing, and performance optimizations.
                 </p>
                 <div className={styles.cardLinks}>
-                  <a href="#">Live Demo</a>
-                  <a href="#">GitHub</a>
+                  <a href="https://github.com/MathiasAsBirk/F1_React" target="_blank">View Code (GitHub)</a>
                 </div>
               </div>
             </article>
 
-            {/* Project 2 - Portfolio */}
+            {/* PROJECT 2: Travel Blog */}
             <article className={styles.projectCard}>
-              <div className={styles.cardImage}></div>
+              <img src={travelImg} alt="Travel Blog Preview" className={styles.cardImage} />
+              
+              <div className={styles.cardContent}>
+                <h4>Travel Blog</h4>
+                <p>
+                  A responsive, static travel blog focused on typography and 
+                  image optimization. Hosted via GitHub Pages.
+                </p>
+                <div className={styles.cardLinks}>
+                  <a href="https://YOUR_USERNAME.github.io/travel-blog" target="_blank">Live Demo</a>
+                  <a href="https://github.com/MathiasAsBirk/Travel_React" target="_blank">GitHub</a>
+                </div>
+              </div>
+            </article>
+
+            {/* PROJECT 3: Portfolio (Placeholder for Car Site later) */}
+            <article className={styles.projectCard}>
+              {/* <img src={portfolioImg} alt="Portfolio Preview" className={styles.cardImage} /> */}
+              
               <div className={styles.cardContent}>
                 <h4>Portfolio Website</h4>
                 <p>
-                  My personal portfolio built with React and CSS Modules. 
-                  Designed to be clean, fast, and fully responsive across all devices.
+                  You are looking at it! Built with React, React Router, and CSS Modules. 
+                  Focused on component reusability and a professional aesthetic.
                 </p>
                 <div className={styles.cardLinks}>
-                  <a href="#">Live Demo</a>
-                  <a href="#">GitHub</a>
+                  <a href="https://github.com/YOUR_USERNAME/Portfolio" target="_blank">View Code</a>
                 </div>
               </div>
             </article>
 
-            {/* Project 3 - Task Manager (Matches Node.js skill) */}
-            <article className={styles.projectCard}>
-              <div className={styles.cardImage}></div>
-              <div className={styles.cardContent}>
-                <h4>Task Manager API</h4>
-                <p>
-                  A full-stack productivity tool using Node.js and MongoDB. 
-                  Focuses on backend logic, API integration, and data structure.
-                </p>
-                <div className={styles.cardLinks}>
-                  <a href="#">Live Demo</a>
-                  <a href="#">GitHub</a>
-                </div>
-              </div>
-            </article>
           </div>
         </div>
       </section>
