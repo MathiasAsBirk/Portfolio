@@ -32,6 +32,7 @@
 
 /* --- HERO SECTION --- */
 .hero {
+  margin-top: -30px;
   min-height: 100vh;
   display: flex;
   align-items: center;
