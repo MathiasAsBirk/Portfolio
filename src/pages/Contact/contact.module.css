@@ -1,18 +1,17 @@
 .page {
-  margin-top: -50px;
   min-height: calc(100vh - 72px);
   background-color: var(--bg-main);
 }
 
 .inner {
-  max-width: 1000px; /* Slightly narrower for better focus */
+  max-width: 1000px;
   margin: 0 auto;
   padding: 100px 24px 120px;
 }
 
 .header {
   margin-bottom: 64px;
-  text-align: center; /* Center align header for Contact page */
+  text-align: center;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -51,12 +50,13 @@
   height: 8px;
   background-color: var(--accent);
   border-radius: 50%;
-  box-shadow: 0 0 10px var(--accent); /* Glowing effect */
+  box-shadow: 0 0 10px var(--accent);
 }
 
 /* Cards Grid */
 .content {
   display: grid;
+  /* Auto-fit will automatically stack them if screen is < 280px wide */
   grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
   gap: 32px;
 }
@@ -95,7 +95,7 @@
   font-weight: 600;
   text-decoration: none;
   font-size: 1rem;
-  word-break: break-word; /* Prevents long emails from breaking layout */
+  word-break: break-word; /* Important for long emails on mobile */
   padding-bottom: 2px;
   border-bottom: 1px solid transparent;
   transition: border-color 0.2s;
@@ -103,4 +103,20 @@
 
 .link:hover {
   border-bottom-color: var(--accent);
+}
+
+/* --- MOBILE RESPONSIVENESS --- */
+@media (max-width: 600px) {
+  .inner {
+    padding: 60px 16px 80px; /* Reduce padding */
+  }
+
+  .header h1 {
+    font-size: 2.25rem;
+  }
+  
+  .content {
+    grid-template-columns: 1fr; /* Force single column on small phones */
+    gap: 24px;
+  }
 }

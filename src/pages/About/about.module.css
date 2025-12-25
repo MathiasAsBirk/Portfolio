@@ -1,5 +1,4 @@
 .page {
-  margin-top: -50px;
   min-height: calc(100vh - 72px);
   background-color: var(--bg-main);
 }
@@ -52,7 +51,6 @@
   width: 100%;
   height: auto;
   display: block;
-  /* Removed grayscale so it looks more alive */
   transition: transform 0.3s ease;
 }
 
@@ -114,20 +112,29 @@
   color: var(--text-muted);
 }
 
-/* Responsive */
+/* --- MOBILE RESPONSIVENESS --- */
 @media (max-width: 900px) {
+  .inner {
+    padding: 60px 24px 80px;
+  }
+
   .content {
-    grid-template-columns: 1fr; /* Stack on tablet */
+    grid-template-columns: 1fr; /* Stack on tablet/mobile */
     gap: 48px;
   }
 
   .imageWrap {
-    max-width: 400px;
+    max-width: 320px;
     margin: 0 auto;
-    position: static;
+    position: static; /* Remove sticky on mobile */
   }
   
-  .textColumn {
-    text-align: left;
+  /* Center text on mobile for better flow */
+  .header, .textColumn { 
+    text-align: left; 
+  }
+  
+  .header h1 {
+    font-size: 2.5rem;
   }
 }

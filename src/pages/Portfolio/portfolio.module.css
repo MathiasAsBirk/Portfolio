@@ -1,7 +1,6 @@
 .page {
-  margin-top: -50px;
   min-height: calc(100vh - 72px);
-  background-color: var(--bg-main); /* Ensures consistent dark background */
+  background-color: var(--bg-main);
 }
 
 .inner {
@@ -33,15 +32,15 @@
 /* Grid Layout */
 .grid {
   display: grid;
-  /* Creates 3 columns automatically on wide screens */
-  grid-template-columns: repeat(auto-fill, minmax(320px, 1fr));
+  /* Optimized for mobile: will go down to 280px width */
+  grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
   gap: 32px;
 }
 
 /* Vertical Card Styling */
 .card {
   display: flex;
-  flex-direction: column; /* Stacks image on top of content */
+  flex-direction: column;
   background: var(--bg-card);
   border: 1px solid var(--border);
   border-radius: var(--radius-lg);
@@ -55,7 +54,7 @@
 }
 
 .image {
-  height: 220px; /* Fixed height for image area */
+  height: 220px;
   width: 100%;
   background: linear-gradient(
     135deg,
@@ -69,7 +68,7 @@
   padding: 24px;
   display: flex;
   flex-direction: column;
-  flex-grow: 1; /* Ensures cards are equal height */
+  flex-grow: 1;
 }
 
 .content h3 {
@@ -89,7 +88,7 @@
 .tech {
   list-style: none;
   padding: 0;
-  margin: auto 0 24px 0; /* Pushes tech stack to bottom of description */
+  margin: auto 0 24px 0;
   display: flex;
   gap: 8px;
   flex-wrap: wrap;
@@ -123,4 +122,19 @@
 .links a:hover {
   opacity: 0.8;
   text-decoration: underline;
+}
+
+/* --- MOBILE RESPONSIVENESS --- */
+@media (max-width: 600px) {
+  .inner {
+    padding: 40px 16px 80px;
+  }
+
+  .header h1 {
+    font-size: 2rem;
+  }
+
+  .grid {
+    gap: 24px;
+  }
 }
