@@ -62,7 +62,7 @@ function Portfolio() {
               </ul>
 
               <div className={styles.links}>
-                <a href="https://YOUR_USERNAME.github.io/travel-blog" target="_blank">Live Demo</a>
+                <a href="https://mathiasasbirk.github.io/Travel_React/" target="_blank">Live Demo</a>
                 <a href="https://github.com/MathiasAsBirk/Travel_React" target="_blank">View Code</a>
               </div>
             </div>

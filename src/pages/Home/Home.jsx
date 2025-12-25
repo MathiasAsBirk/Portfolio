@@ -102,7 +102,7 @@ function Home() {
                   image optimization. Hosted via GitHub Pages.
                 </p>
                 <div className={styles.cardLinks}>
-                  <a href="https://YOUR_USERNAME.github.io/travel-blog" target="_blank">Live Demo</a>
+                  <a href="https://mathiasasbirk.github.io/Travel_React/" target="_blank">Live Demo</a>
                   <a href="https://github.com/MathiasAsBirk/Travel_React" target="_blank">GitHub</a>
                 </div>
               </div>
