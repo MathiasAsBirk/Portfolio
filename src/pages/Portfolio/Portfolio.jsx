@@ -6,7 +6,7 @@ import travelImg from "../../assets/travel-preview.png";
 
 function Portfolio() {
   return (
-    <section className={styles.page}>
+    <section id="projects" className={styles.page}>
       <div className={styles.inner}>
         <header className={styles.header}>
           <h1>My Projects</h1>

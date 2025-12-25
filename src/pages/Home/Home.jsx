@@ -1,6 +1,6 @@
 import styles from "./home.module.css";
+import { Link } from 'react-router-dom';
 import profileImg from "../../assets/profile.png";
-
 import f1Img from "../../assets/f1-preview.png";
 import travelImg from "../../assets/travel-preview.png";
 
@@ -23,8 +23,13 @@ function Home() {
             just solid components and testable logic.
           </p>
           <div className={styles.actions}>
-            <button className={styles.primary}>View projects</button>
-            <button className={styles.secondary}>Contact me</button>
+            <Link to="/portfolio" className={styles.primary}>
+              View projects
+            </Link>
+
+            <Link to="/contact" className={styles.secondary}>
+              Contact me
+            </Link>
           </div>
         </div>
       </section>
