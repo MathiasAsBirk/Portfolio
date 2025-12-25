@@ -119,7 +119,7 @@ function Home() {
                   Focused on component reusability and a professional aesthetic.
                 </p>
                 <div className={styles.cardLinks}>
-                  <a href="https://github.com/YOUR_USERNAME/Portfolio" target="_blank">View Code</a>
+                  <a href="https://github.com/MathiasAsBirk/Portfolio" target="_blank">View Code</a>
                 </div>
               </div>
             </article>

@@ -88,7 +88,7 @@ function Portfolio() {
 
               <div className={styles.links}>
                  {/* This site is live, so we can link both if you want */}
-                <a href="https://github.com/YOUR_USERNAME/Portfolio" target="_blank">View Code</a>
+                <a href="https://github.com/MathiasAsBirk/Portfolio" target="_blank">View Code</a>
               </div>
             </div>
           </article>
