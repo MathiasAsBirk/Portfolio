@@ -9,7 +9,6 @@
   padding: 80px 24px 120px;
 }
 
-/* Header Styling */
 .header {
   margin-bottom: 64px;
   border-bottom: 1px solid var(--border);
@@ -29,15 +28,12 @@
   font-size: 1.1rem;
 }
 
-/* Grid Layout */
 .grid {
   display: grid;
-  /* Optimized for mobile: will go down to 280px width */
   grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
   gap: 32px;
 }
 
-/* Vertical Card Styling */
 .card {
   display: flex;
   flex-direction: column;
@@ -82,7 +78,6 @@
   margin-bottom: 20px;
 }
 
-/* Tech Pills */
 .tech {
   list-style: none;
   padding: 0;
@@ -101,7 +96,6 @@
   border: 1px solid transparent;
 }
 
-/* Links */
 .links {
   display: flex;
   gap: 20px;

@@ -2,7 +2,6 @@ import { NavLink } from "react-router-dom";
 import styles from "./navbar.module.css";
 
 function Navbar() {
-  // Helper to manage the classes nicely
   const getLinkClass = ({ isActive }) => 
     isActive ? `${styles.link} ${styles.active}` : styles.link;
 

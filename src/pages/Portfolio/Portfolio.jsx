@@ -1,8 +1,7 @@
 import styles from "./portfolio.module.css";
-
-// Import the screenshots
 import f1Img from "../../assets/f1-preview.png";
 import travelImg from "../../assets/travel-preview.png";
+import oldf1 from "../../assets/old-f1.png"
 
 function Portfolio() {
   return (
@@ -20,7 +19,6 @@ function Portfolio() {
           
           {/* F1 APP */}
           <article className={styles.card}>
-            {/* Replaced div with Image */}
             <img src={f1Img} alt="F1 App" className={styles.image} />
             
             <div className={styles.content}>
@@ -68,30 +66,29 @@ function Portfolio() {
             </div>
           </article>
 
-          {/* PORTFOLIO */}
+          {/* PROJECT 3: F1 v1.0 (The Foundation) */}
           <article className={styles.card}>
-            {/* <img src={portfolioImg} alt="Portfolio" className={styles.image} /> */}
-            
-            <div className={styles.content}>
-              <h3>Personal Portfolio</h3>
-              <p>
-                Designed to align with my CV and LinkedIn profile. 
-                Features a custom design system using CSS variables and 
-                React Router for seamless navigation.
-              </p>
+  <img src={oldf1} alt="F1 Version 1" className={styles.image} />
+  
+  <div className={styles.content}>
+    <h3>F1 App (Version 1.0)</h3>
+    <p>
+      The initial React build focusing on backend integration and core logic. 
+      This version established the data structure that I later expanded with 
+      advanced UI/UX in the final version.
+    </p>
 
-              <ul className={styles.tech}>
-                <li>React</li>
-                <li>Vite</li>
-                <li>Responsive</li>
-              </ul>
+    <ul className={styles.tech}>
+      <li>React</li>
+      <li>API Integration</li>
+      <li>CSS Grid</li>
+    </ul>
 
-              <div className={styles.links}>
-                 {/* This site is live, so we can link both if you want */}
-                <a href="https://github.com/MathiasAsBirk/Portfolio" target="_blank">View Code</a>
-              </div>
-            </div>
-          </article>
+    <div className={styles.links}>
+      <a href="https://github.com/MathiasAsBirk/F1_React_Old" target="_blank" rel="noopener noreferrer">View v1 Code</a>
+    </div>
+  </div>
+</article>
 
         </div>
       </div>

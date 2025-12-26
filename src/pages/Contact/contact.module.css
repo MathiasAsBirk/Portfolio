@@ -32,7 +32,6 @@
   margin-bottom: 32px;
 }
 
-/* Status Indicator */
 .status {
   display: inline-flex;
   align-items: center;
@@ -54,10 +53,8 @@
   box-shadow: 0 0 10px var(--accent);
 }
 
-/* Cards Grid */
 .content {
   display: grid;
-  /* Auto-fit will automatically stack them if screen is < 280px wide */
   grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
   gap: 32px;
 }
@@ -96,7 +93,7 @@
   font-weight: 600;
   text-decoration: none;
   font-size: 1rem;
-  word-break: break-word; /* Important for long emails on mobile */
+  word-break: break-word; 
   padding-bottom: 2px;
   border-bottom: 1px solid transparent;
   transition: border-color 0.2s;
@@ -109,7 +106,7 @@
 /* --- MOBILE RESPONSIVENESS --- */
 @media (max-width: 600px) {
   .inner {
-    padding: 60px 16px 80px; /* Reduce padding */
+    padding: 60px 16px 80px; 
   }
 
   .header h1 {
@@ -117,7 +114,7 @@
   }
   
   .content {
-    grid-template-columns: 1fr; /* Force single column on small phones */
+    grid-template-columns: 1fr;
     gap: 24px;
   }
 }

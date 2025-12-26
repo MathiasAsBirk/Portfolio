@@ -27,8 +27,6 @@
   display: flex;
   gap: 32px;
 }
-
-/* Base style for links */
 .link {
   font-size: 0.95rem;
   color: var(--text-muted);
@@ -41,7 +39,6 @@
   color: var(--text-main);
 }
 
-/* The active state class */
 .active {
   color: var(--accent);
 }
@@ -49,7 +46,7 @@
 /* --- MOBILE RESPONSIVENESS --- */
 @media (max-width: 600px) {
   .inner {
-    flex-direction: column; /* Stack Logo on top */
+    flex-direction: column;
     gap: 16px;
     padding: 12px 16px;
   }
@@ -58,7 +55,7 @@
     gap: 20px;
     width: 100%;
     justify-content: center;
-    flex-wrap: wrap; /* Allows links to wrap if screen is very small */
+    flex-wrap: wrap;
   }
 
   .link {

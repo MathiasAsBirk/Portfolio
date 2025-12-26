@@ -9,7 +9,6 @@
   padding: 80px 24px 120px;
 }
 
-/* Header matches Portfolio style */
 .header {
   margin-bottom: 64px;
   border-bottom: 1px solid var(--border);
@@ -29,22 +28,20 @@
   font-size: 1.1rem;
 }
 
-/* Main Grid Layout */
 .content {
   display: grid;
-  grid-template-columns: 350px 1fr; /* Fixed image width, flexible text */
+  grid-template-columns: 350px 1fr; 
   gap: 80px;
   align-items: start;
 }
 
-/* Image Styling */
 .imageWrap {
   border-radius: var(--radius-lg);
   overflow: hidden;
   border: 1px solid var(--border);
   background: var(--bg-card);
   position: sticky;
-  top: 100px; /* Keeps image visible while scrolling text */
+  top: 100px; 
 }
 
 .imageWrap img {
@@ -58,7 +55,6 @@
   transform: scale(1.03);
 }
 
-/* Text Column Styling */
 .textColumn {
   display: flex;
   flex-direction: column;
@@ -76,14 +72,12 @@
   margin-top: 24px;
 }
 
-/* Make the first paragraph pop */
 .lead {
   color: var(--text-main) !important;
   font-size: 1.25rem !important;
   font-weight: 500;
 }
 
-/* Info Grid (Education, etc) */
 .infoGrid {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
@@ -119,17 +113,16 @@
   }
 
   .content {
-    grid-template-columns: 1fr; /* Stack on tablet/mobile */
+    grid-template-columns: 1fr; 
     gap: 48px;
   }
 
   .imageWrap {
     max-width: 320px;
     margin: 0 auto;
-    position: static; /* Remove sticky on mobile */
+    position: static; 
   }
   
-  /* Center text on mobile for better flow */
   .header, .textColumn { 
     text-align: left; 
   }

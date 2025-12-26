@@ -3,6 +3,7 @@ import { Link } from 'react-router-dom';
 import profileImg from "../../assets/profile.png";
 import f1Img from "../../assets/f1-preview.png";
 import travelImg from "../../assets/travel-preview.png";
+import oldf1 from "../../assets/old-f1.png"
 
 function Home() {
   return (
@@ -81,7 +82,6 @@ function Home() {
             
             {/* PROJECT 1: F1 App */}
             <article className={styles.projectCard}>
-              {/* Image replaces the empty div */}
               <img src={f1Img} alt="F1 App Preview" className={styles.cardImage} />
               
               <div className={styles.cardContent}>
@@ -113,18 +113,19 @@ function Home() {
               </div>
             </article>
 
-            {/* PROJECT 3: Portfolio (Placeholder for Car Site later) */}
+            {/* PROJECT 3: F1 v1.0 (The Foundation) */}
             <article className={styles.projectCard}>
-              {/* <img src={portfolioImg} alt="Portfolio Preview" className={styles.cardImage} /> */}
-              
+              <img src={oldf1} alt="F1 Version 1" className={styles.cardImage} />
+  
               <div className={styles.cardContent}>
-                <h4>Portfolio Website</h4>
-                <p>
-                  You are looking at it! Built with React, React Router, and CSS Modules. 
-                  Focused on component reusability and a professional aesthetic.
-                </p>
+                <h4>F1 App (Version 1.0)</h4>
+                  <p>
+                    The initial React build focusing on backend integration and core logic. 
+                    This version established the data structure that I later expanded with 
+                    advanced UI/UX in the final version.
+                  </p>
                 <div className={styles.cardLinks}>
-                  <a href="https://github.com/MathiasAsBirk/Portfolio" target="_blank">View Code</a>
+                  <a href="https://github.com/MathiasAsBirk/F1_React_Old" target="_blank" rel="noopener noreferrer">View v1 Code</a>
                 </div>
               </div>
             </article>

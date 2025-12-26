@@ -22,7 +22,6 @@ function Contact() {
           <div className={styles.card}>
             <h3>Email</h3>
             <p className={styles.cardText}>Best way to reach me.</p>
-            {/* I removed spaces from the email found in your CV to make it valid */}
             <a href="mailto:MathiasAsBirkeland@outlook.dk" className={styles.link}>
               MathiasAsBirkeland@outlook.dk
             </a>
