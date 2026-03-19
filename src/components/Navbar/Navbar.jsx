@@ -1,14 +1,16 @@
-import { NavLink } from "react-router-dom";
+import { NavLink, Link } from "react-router-dom";
 import styles from "./navbar.module.css";
 
 function Navbar() {
-  const getLinkClass = ({ isActive }) => 
+  const getLinkClass = ({ isActive }) =>
     isActive ? `${styles.link} ${styles.active}` : styles.link;
 
   return (
     <header className={styles.header}>
       <div className={styles.inner}>
-        <span className={styles.logo}>MathiasDev</span>
+        <Link to="/" className={styles.logo}>
+          MathiasDev
+        </Link>
 
         <nav className={styles.nav}>
           <NavLink to="/" end className={getLinkClass}>

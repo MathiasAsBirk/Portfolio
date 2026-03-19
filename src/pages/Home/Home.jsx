@@ -1,135 +1,270 @@
 import styles from "./home.module.css";
-import { Link } from 'react-router-dom';
+import { Link } from "react-router-dom";
 import profileImg from "../../assets/profile.png";
 import f1Img from "../../assets/f1-preview.png";
 import travelImg from "../../assets/travel-preview.png";
-import oldf1 from "../../assets/old-f1.png"
+import oldf1 from "../../assets/old-f1.png";
 
 function Home() {
   return (
     <div className={styles.container}>
       {/* HERO SECTION */}
       <section className={styles.hero}>
-        <div className={styles.heroInner}>
-          <span className={styles.kicker}>Newly Graduated Web Developer</span>
-          <h1 className={styles.title}>
-            Hi, I’m <span>Mathias</span>
-          </h1>
-          <h2 className={styles.subtitle}>
-            Frontend Specialist focused on React, UI/UX, and Clean Code.
-          </h2>
-          <p className={styles.description}>
-            I build modern web applications with a focus on performance and maintainability. 
-            I take pride in delivering stable, well-thought-out solutions—no ceremony, 
-            just solid components and testable logic.
-          </p>
-          <div className={styles.actions}>
-            <Link to="/portfolio" className={styles.primary}>
-              View projects
-            </Link>
+        <div className={styles.heroDecor}></div>
 
-            <Link to="/contact" className={styles.secondary}>
-              Contact me
-            </Link>
+        <div className={styles.heroInner}>
+          <div className={styles.heroText}>
+            <span className={styles.kicker}>Frontend Developer • React • UI Focus</span>
+
+            <h1 className={styles.title}>
+              Fresh, modern frontend work with <span>clean structure</span> and a sharp eye for UI.
+            </h1>
+
+            <p className={styles.lead}>
+              I’m Mathias — a web developer from Viborg, Denmark, building responsive
+              React interfaces with a focus on clarity, usability, and maintainable code.
+            </p>
+
+            <p className={styles.description}>
+              I like frontend that feels polished without being overdone — clean layouts,
+              solid logic, thoughtful details, and projects that actually feel finished.
+            </p>
+
+            <div className={styles.actions}>
+              <Link to="/portfolio" className={styles.primary}>
+                View projects
+              </Link>
+
+              <Link to="/contact" className={styles.secondary}>
+                Contact me
+              </Link>
+            </div>
+          </div>
+
+          <div className={styles.heroCard}>
+            <div className={styles.heroCardTop}>
+              <span className={styles.heroDot}></span>
+              <span className={styles.heroDot}></span>
+              <span className={styles.heroDot}></span>
+            </div>
+
+            <div className={styles.heroCardBody}>
+              <div className={styles.heroMiniLabel}>Currently focused on</div>
+              <h2>React, responsive UI, and cleaner portfolio presentation.</h2>
+
+              <div className={styles.heroStats}>
+                <div className={styles.heroStat}>
+                  <span>Focus</span>
+                  <strong>Frontend</strong>
+                </div>
+                <div className={styles.heroStat}>
+                  <span>Main stack</span>
+                  <strong>React</strong>
+                </div>
+                <div className={styles.heroStat}>
+                  <span>Based in</span>
+                  <strong>Denmark</strong>
+                </div>
+              </div>
+            </div>
           </div>
         </div>
       </section>
 
-      {/* ABOUT PREVIEW */}
+      {/* ABOUT */}
       <section className={styles.about}>
         <div className={styles.sectionInner}>
           <div className={styles.aboutContent}>
             <div className={styles.aboutText}>
-              <h3 className={styles.sectionTitle}>About Me</h3>
-              <p>
-                I am a focused and practical developer based in <strong>Viborg, Denmark</strong>. 
-                My approach is product-oriented: I prioritize user-friendly interfaces 
-                and code that holds up over time.
+              <span className={styles.sectionEyebrow}>About</span>
+
+              <h2 className={styles.sectionTitle}>
+                Frontend development with a practical mindset and a strong feel for clean UI.
+              </h2>
+
+              <p className={styles.aboutIntro}>
+                I like building interfaces that feel simple, polished, and easy to use —
+                while still being structured properly behind the scenes.
               </p>
-              <p>
-                I thrive in environments where I can take responsibility for my tasks 
-                and keep a cool head under pressure.
-              </p>
+
+              <div className={styles.aboutPoints}>
+                <article className={styles.aboutPoint}>
+                  <h3>How I work</h3>
+                  <p>
+                    I approach development in a grounded way: understand the task, build it
+                    properly, and keep the result clean enough to scale without turning it
+                    into a mess later.
+                  </p>
+                </article>
+
+                <article className={styles.aboutPoint}>
+                  <h3>What I care about</h3>
+                  <p>
+                    My main focus is React and modern frontend work, with attention to UI,
+                    maintainability, and the kind of details that make a project feel more
+                    complete and intentional.
+                  </p>
+                </article>
+
+                <article className={styles.aboutPoint}>
+                  <h3>What I aim for</h3>
+                  <p>
+                    I’m especially drawn to interfaces that feel smooth, balanced, and easy
+                    to use — not just technically working, but actually pleasant to interact with.
+                  </p>
+                </article>
+              </div>
             </div>
+
             <div className={styles.imageWrap}>
-              <img src={profileImg} alt="Mathias Askham Birkeland" />
+              <div className={styles.imageFrame}>
+                <img src={profileImg} alt="Mathias Askham Birkeland" />
+              </div>
             </div>
           </div>
         </div>
       </section>
 
-      {/* TECH STACK */}
+      {/* FOCUS */}
       <section className={styles.tech}>
         <div className={styles.sectionInner}>
-          <h3 className={styles.sectionTitle}>Tech Stack</h3>
+          <span className={styles.sectionEyebrow}>Focus</span>
+
+          <div className={styles.sectionHeadingRow}>
+            <h2 className={styles.sectionTitle}>What I work with</h2>
+            <p className={styles.sectionSupport}>
+              A frontend-first toolkit built around responsive UI, structure, and cleaner implementation.
+            </p>
+          </div>
+
           <div className={styles.techGrid}>
-            <div className={styles.techCard}>React</div>
-            <div className={styles.techCard}>JavaScript</div>
-            <div className={styles.techCard}>CSS Modules</div>
-            <div className={styles.techCard}>Node.js</div>
-            <div className={styles.techCard}>GitHub</div>
-            <div className={styles.techCard}>Figma</div>
+            <article className={styles.techCard}>
+              <h3>React</h3>
+              <p>Component-based frontend work with structure, reusability, and clarity in mind.</p>
+            </article>
+
+            <article className={styles.techCard}>
+              <h3>JavaScript</h3>
+              <p>Readable logic, maintainable functionality, and practical problem-solving.</p>
+            </article>
+
+            <article className={styles.techCard}>
+              <h3>CSS Modules</h3>
+              <p>Scoped styling with more control, cleaner organization, and less chaos.</p>
+            </article>
+
+            <article className={styles.techCard}>
+              <h3>Node.js</h3>
+              <p>Useful backend understanding for APIs, data flow, and full-stack projects.</p>
+            </article>
+
+            <article className={styles.techCard}>
+              <h3>GitHub</h3>
+              <p>Version control, cleaner workflows, and projects built in a more structured way.</p>
+            </article>
+
+            <article className={styles.techCard}>
+              <h3>Figma</h3>
+              <p>Layout thinking, visual planning, and bridging design ideas into real UI.</p>
+            </article>
           </div>
         </div>
       </section>
 
-      {/* PROJECTS SECTION */}
+      {/* PROJECTS */}
       <section className={styles.projects}>
         <div className={styles.sectionInner}>
-          <h3 className={styles.sectionTitle}>Featured Projects</h3>
-          
+          <span className={styles.sectionEyebrow}>Projects</span>
+
+          <div className={styles.sectionHeadingRow}>
+            <h2 className={styles.sectionTitle}>Selected work</h2>
+            <p className={styles.sectionSupport}>
+              A few projects that show how I think about structure, frontend presentation, and progression.
+            </p>
+          </div>
+
           <div className={styles.projectGrid}>
-            
-            {/* PROJECT 1: F1 App */}
             <article className={styles.projectCard}>
-              <img src={f1Img} alt="F1 App Preview" className={styles.cardImage} />
-              
+              <div className={styles.cardImageWrap}>
+                <img src={f1Img} alt="F1 App Preview" className={styles.cardImage} />
+              </div>
+
               <div className={styles.cardContent}>
-                <h4>F1 Stats & Fan App</h4>
+                <div className={styles.cardMeta}>Flagship Project</div>
+                <h3>F1 Stats & Fan App</h3>
                 <p>
-                  My flagship project. A full-stack React application with live data, 
-                  routing, and performance optimizations.
+                  A full-stack React application built around Formula 1 data, routing, and
+                  frontend structure — combining useful content with a stronger UI layer.
                 </p>
+
                 <div className={styles.cardLinks}>
-                  <a href="https://github.com/MathiasAsBirk/F1_React" target="_blank">View Code (GitHub)</a>
+                  <a
+                    href="https://github.com/MathiasAsBirk/F1_React"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                  >
+                    View Code
+                  </a>
                 </div>
               </div>
             </article>
 
-            {/* PROJECT 2: Travel Blog */}
             <article className={styles.projectCard}>
-              <img src={travelImg} alt="Travel Blog Preview" className={styles.cardImage} />
-              
+              <div className={styles.cardImageWrap}>
+                <img src={travelImg} alt="Travel Blog Preview" className={styles.cardImage} />
+              </div>
+
               <div className={styles.cardContent}>
-                <h4>Travel Blog</h4>
+                <div className={styles.cardMeta}>Responsive Frontend</div>
+                <h3>Travel Blog</h3>
                 <p>
-                  A responsive, static travel blog focused on typography and 
-                  image optimization. Hosted via GitHub Pages.
+                  A cleaner, content-driven React build focused on layout, typography,
+                  responsiveness, and image presentation. Hosted via GitHub Pages.
                 </p>
+
                 <div className={styles.cardLinks}>
-                  <a href="https://mathiasasbirk.github.io/Travel_React/" target="_blank">Live Demo</a>
-                  <a href="https://github.com/MathiasAsBirk/Travel_React" target="_blank">GitHub</a>
+                  <a
+                    href="https://mathiasasbirk.github.io/Travel_React/"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                  >
+                    Live Demo
+                  </a>
+                  <a
+                    href="https://github.com/MathiasAsBirk/Travel_React"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                  >
+                    GitHub
+                  </a>
                 </div>
               </div>
             </article>
 
-            {/* PROJECT 3: F1 v1.0 (The Foundation) */}
             <article className={styles.projectCard}>
-              <img src={oldf1} alt="F1 Version 1" className={styles.cardImage} />
-  
+              <div className={styles.cardImageWrap}>
+                <img src={oldf1} alt="F1 Version 1" className={styles.cardImage} />
+              </div>
+
               <div className={styles.cardContent}>
-                <h4>F1 App (Version 1.0)</h4>
-                  <p>
-                    The initial React build focusing on backend integration and core logic. 
-                    This version established the data structure that I later expanded with 
-                    advanced UI/UX in the final version.
-                  </p>
+                <div className={styles.cardMeta}>Foundation Build</div>
+                <h3>F1 App v1.0</h3>
+                <p>
+                  The original build focused on backend integration, core logic, and data
+                  structure — the foundation that later grew into a more refined version.
+                </p>
+
                 <div className={styles.cardLinks}>
-                  <a href="https://github.com/MathiasAsBirk/F1_React_Old" target="_blank" rel="noopener noreferrer">View v1 Code</a>
+                  <a
+                    href="https://github.com/MathiasAsBirk/F1_React_Old"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                  >
+                    View v1 Code
+                  </a>
                 </div>
               </div>
             </article>
-
           </div>
         </div>
       </section>

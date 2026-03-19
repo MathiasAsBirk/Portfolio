@@ -4,60 +4,80 @@ import profileImg from "../../assets/profile.png";
 function About() {
   return (
     <section className={styles.page}>
+      <div className={styles.pageDecor}></div>
+
       <div className={styles.inner}>
         <header className={styles.header}>
-          <h1>About Me</h1>
-          <p>
-            Practical and product-oriented Web Developer. I build clean, 
-            structured interfaces that are easy to maintain and scale.
-          </p>
+          <span className={styles.eyebrow}>About</span>
+
+          <div className={styles.headerRow}>
+            <div>
+              <h1>Frontend-focused, practical, and drawn to interfaces that feel clean and well-built.</h1>
+              <p>
+                I build with a structured mindset and a clear preference for frontend work that feels polished,
+                maintainable, and easy to use — without unnecessary noise.
+              </p>
+            </div>
+
+            <div className={styles.headerCard}>
+              <span className={styles.headerCardLabel}>Current direction</span>
+              <ul>
+                <li>React and modern frontend development</li>
+                <li>UI structure and cleaner implementation</li>
+                <li>Interfaces that feel smooth and intentional</li>
+              </ul>
+            </div>
+          </div>
         </header>
 
         <div className={styles.content}>
-          {/* Left Column: Image */}
           <div className={styles.imageWrap}>
-            <img src={profileImg} alt="Mathias Askham Birkeland" />
+            <div className={styles.imageFrame}>
+              <img src={profileImg} alt="Mathias Askham Birkeland" />
+            </div>
           </div>
 
-          {/* Right Column: Bio & Info */}
           <div className={styles.textColumn}>
             <div className={styles.bio}>
               <p className={styles.lead}>
-                I am a newly graduated Web Developer with a strong foundation in modern 
-                frontend development, specifically React, JavaScript, and CSS Modules.
-              </p>
-              
-              <p>
-                My approach to development is straightforward: I favor stable, well-thought-out 
-                solutions over clever tricks. I enjoy working independently and taking ownership 
-                of my tasks, but I also value effective teamwork when building larger systems.
+                I’m a newly graduated web developer with a strong focus on React, JavaScript,
+                and frontend structure that stays clean as a project grows.
               </p>
 
               <p>
-                With experience from both retail and office environments, I have learned to 
-                keep a cool head under pressure and maintain structure in my daily workflows. 
-                I am now looking for an opportunity to contribute my skills to a professional development team.
+                My approach is pretty straightforward: understand the task, build it properly,
+                and aim for solutions that are stable, readable, and maintainable rather than clever for the sake of it.
+              </p>
+
+              <p>
+                I enjoy working independently and taking ownership of what I build, but I also value
+                good collaboration when a project needs shared direction and consistency.
+              </p>
+
+              <p>
+                Experience from both retail and office environments has also shaped how I work:
+                stay calm under pressure, keep structure in the day-to-day, and focus on delivering something solid.
               </p>
             </div>
 
             <div className={styles.infoGrid}>
-              <div className={styles.infoBox}>
+              <article className={styles.infoBox}>
                 <h3>Education</h3>
                 <p>Web Developer</p>
-                <span>Media College Denmark (2025)</span>
-              </div>
-              
-              <div className={styles.infoBox}>
-                <h3>Core Focus</h3>
-                <p>React & Clean Code</p>
-                <span>Frontend / UI / UX</span>
-              </div>
+                <span>Media College Denmark · 2025</span>
+              </article>
 
-              <div className={styles.infoBox}>
+              <article className={styles.infoBox}>
+                <h3>Core Focus</h3>
+                <p>React & Frontend UI</p>
+                <span>Structure · usability · maintainability</span>
+              </article>
+
+              <article className={styles.infoBox}>
                 <h3>Location</h3>
                 <p>Viborg, Denmark</p>
                 <span>Open to relocation</span>
-              </div>
+              </article>
             </div>
           </div>
         </div>
