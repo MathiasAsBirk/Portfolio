@@ -1,23 +1,24 @@
-import { Routes, Route } from "react-router-dom";
-
-import Navbar from "./components/Navbar/Navbar";
-
-import Home from "./pages/Home/Home";
-import Portfolio from "./pages/Portfolio/Portfolio";
-import About from "./pages/About/About";
-import Contact from "./pages/Contact/Contact";
+import './index.css';
+import Navbar from './components/Navbar';
+import Hero from './components/Hero';
+import Work from './components/Work';
+import Stack from './components/Stack';
+import About from './components/About';
+import Contact from './components/Contact';
+import Footer from './components/Footer';
 
 function App() {
   return (
     <>
       <Navbar />
-
-      <Routes>
-        <Route path="/" element={<Home />} />
-        <Route path="/portfolio" element={<Portfolio />} />
-        <Route path="/about" element={<About />} />
-        <Route path="/contact" element={<Contact />} />
-      </Routes>
+      <main>
+        <Hero />
+        <Work />
+        <Stack />
+        <About />
+        <Contact />
+      </main>
+      <Footer />
     </>
   );
 }
